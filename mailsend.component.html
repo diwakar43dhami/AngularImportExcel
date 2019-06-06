@@ -1,5 +1,5 @@
 <div class="container">
-  <form  [formGroup] = "uploadForm" (onsubmit)="sendMail()" >
+  <form  [formGroup] = "uploadForm" (ngSubmit)="sendMail()" >
     <label for="Attachment">Attachment:</label>
     <input type="file" name="profile" (change)="onFileSelect($event)">
     <button type="submit">SEND</button>
